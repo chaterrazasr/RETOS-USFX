@@ -1,0 +1,7 @@
+filtrando con wireshark con el comando
+
+frame contains "USFX"
+
+TE SALE LA PRIMERA PARTE DE LA flag
+
+Y PARA ECNONTRAR LA OTRA PARTE TIENES QUE VER CADA UNO DE LAS PETICIONES
