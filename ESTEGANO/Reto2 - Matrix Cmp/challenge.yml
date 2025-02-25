@@ -1,0 +1,33 @@
+# Nombre del reto
+name: "Matrix Cmp"
+
+# Categoría del reto
+category: "Esteganografía"
+
+# Descripción del reto
+description: | 
+    Además de "diff" y "md5sum", incluso puedes comparar archivos a nivel de bytes dentro de Linux con el comando "cmp".
+    Encuentre la bandera oculta observando las pequeñas diferencias entre Matrix_meme1 y Matrix_meme2.
+    La bandera comenzará con JCR   
+    
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(QFhPlFwdfY)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - matrix_meme1.jpeg
+    - matrix_meme2.jpeg
+

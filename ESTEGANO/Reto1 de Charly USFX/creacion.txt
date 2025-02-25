@@ -1,0 +1,3 @@
+echo "Mensaje oculto en la niebla del michi" > flag.txt
+
+steghide embed -cf imagen.jpg -ef flag.txt -p "CTF"

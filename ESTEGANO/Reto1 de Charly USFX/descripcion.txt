@@ -1,0 +1,8 @@
+Titulo: El Mensaje Oculto en la Niebla
+Una antigua y misteriosa fotografía muestra un michi, cubierto por la niebla al caer la noche. 
+Podras encontrar la flag - CTF
+
+
+flag: Mensaje oculto en la niebla del michi
+
+flag: USFX{fa910c63337fb2419f5a7b804aff5856}

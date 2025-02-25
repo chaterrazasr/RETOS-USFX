@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "WiredCSV"
+
+# Categoría del reto
+category: "Esteganografía"
+
+# Descripción del reto
+description: | 
+    Tenemos una foto y un archivo CSV. NOTA: La bandera no sigue el formato CTF{...}, pero está claramente marcada como bandera. Agrega CTF{...} alrededor de la bandera manualmente al enviar.
+
+# Valor de puntos del reto
+value: 400
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{8-BIT-HARDWARE-KEYLOGGER}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - attachments/wires.jpg
+    - attachments/data.7z

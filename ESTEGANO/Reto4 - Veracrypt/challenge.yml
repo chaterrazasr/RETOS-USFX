@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "Veracrypt"
+
+# Categoría del reto
+category: "Esteganografía"
+
+# Descripción del reto
+description: | 
+    Puedes ocultar archivos muy bien instalando VeraCrypt. A las computadoras con Windows les resulta muy difícil leer la memoria formateada en ext4 de Linux.
+    Busque la bandera oculta en el contenedor de archivos VeraCrypt incluido.
+    Contraseña del contenedor = linux_is_awesome
+    Bandera = JCR(...)
+    
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(H8ElZnnU6S)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - file_container
