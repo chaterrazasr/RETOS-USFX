@@ -1,0 +1,36 @@
+# Nombre del reto
+name: "Dentro de los corchetes"
+# Autor del reto
+author: ""
+# Categoría del reto
+category: ""
+# Descripción del reto
+description:  |
+    Descripcion del reto siempre con un tap de espacio
+
+# Valor de puntos del reto
+value: Asignale un Valor 
+# Tipo del reto (puede ser standard o dynamic)
+type: standard
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF-USFX{crypto_secret_flag}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+# Versión de la especificación del reto
+version: "0.1"
+#Llama a los archivos que queremos que se muestren
+files:
+    - Nombre del archivo que se colocara en en el reto
+# Configuración extra para dynamic puntuación y otros detalles opcionales
+extra:
+    #Puntos con lo que comienza el reto solo para el primer equipo en resolverlo
+    initial: 500
+    #Puntos que bajara si algun otro equipo lo resuelve primero
+    decay: 100
+    #su minimo para los ultimos en resolver el reto
+    minimum: 50
+
+
