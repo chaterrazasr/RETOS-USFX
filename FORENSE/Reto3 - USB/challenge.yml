@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "USB"
+
+# Categoría del reto
+category: "Forense"
+
+# Descripción del reto
+description: | 
+    En realidad, un teclado es sólo un dispositivo USB. Esta publicación de blog le explica cómo puede usar Wireshark para monitorear el tráfico USB hacia y desde su computadora: https://blog.davehylands.com/capturing-usb-serial-using-wireshark/ Por ejemplo, cuando alguien ingresa su nombre de usuario y/ o contraseña.
+    Analice el archivo usb_keyboard.pcapng suministrado. ¿Puedes encontrar la bandera con llave?
+    Tenga en cuenta que esta bandera tiene una sintaxis ligeramente diferente en términos de sintaxis que los otros rompecabezas.
+    Bandera = jcr[...]
+
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - jcr[asjw28dnvorqn]
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - usb_keyboard.pcapng

@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Forensic_recovery"
+
+# Categoría del reto
+category: "Forense"
+
+# Descripción del reto
+description: | 
+    Este es un desafío forense. ¡Se encontró una ballena azul mientras nadaba en el océano! Las ballenas azules son conocidas por ingerir más comida de un bocado que cualquier otro animal de la Tierra. ¿Puedes averiguar qué se tragó esta ballena azul esta vez?
+    
+# Valor de puntos del reto
+value: 300
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{Acropalypse_r0cks}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - files/bluewhale.tar.gz
+

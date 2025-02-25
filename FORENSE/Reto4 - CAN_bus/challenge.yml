@@ -1,0 +1,31 @@
+# Nombre del reto
+name: "CAN_bus"
+
+# Categoría del reto
+category: "Forense"
+
+# Descripción del reto
+description: | 
+    El protocolo de bus CAN se utiliza en muchos automóviles para controlar procesos electrónicos, como la aceleración y el frenado. Al igual que Modbus, el bus CAN no es una forma segura de comunicación. También tenemos algo de código para simular esto, gracias a: https://cjhackerz.net/posts/can-bus_protocol_pentesting/
+    Analice el archivo canbus-traffic-capture.pcap suministrado. ¿A qué velocidad conducimos nuestro automóvil pequeño (radio de rueda m 0,01832) enviando mensajes de bus CAN al motor?
+    Bandera = JCR(km/h redondeado a número entero)
+
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(100)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - canbus-traffic-capture.pcap
