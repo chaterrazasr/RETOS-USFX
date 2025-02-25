@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "Floppy"
+
+# Categoría del reto
+category: "Misceláneo"
+
+# Descripción del reto
+description: | 
+    Con las credenciales de la carta, iniciaste sesión en Foobanizer9000-PC. Tiene una unidad de disquete... ¿por qué? Hay un archivo .ico en el disco, pero no huele bien...
+
+# Valor de puntos del reto
+value: 300
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{qeY80sU6Ktko8BJW}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - foo.ico

@@ -1,0 +1,12 @@
+le das un dcode brainfuck
+
+JCFHNPVHJEDXTSCZJX======
+
+luego haces fuerza bruta con rot13 hasta llegar al 23,
+para que te salte que es un base 32
+
+6DE2D0AH?65
+
+luego le haer un rot47
+
+estas_pwned

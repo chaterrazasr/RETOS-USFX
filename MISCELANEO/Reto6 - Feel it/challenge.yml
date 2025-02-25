@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "Feel it"
+
+# Categoría del reto
+category: "Misceláneo"
+
+# Descripción del reto
+description: | 
+    Tengo la sensación de que hay una bandera allí en alguna parte.
+    
+# Valor de puntos del reto
+value: 400
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{h1de_and_s33k}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - attachments/feel-it

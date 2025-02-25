@@ -1,0 +1,103 @@
+[ this ] is labyrinth.qky
+
+[ stack ] is direction
+[ stack ] is correctnum
+[ stack ] is failstate
+[ stack ] is validinput
+[ stack ] is navigating
+
+[	say "Start a new game by typing 'newgame'" cr	]	is announce_newgame
+
+[	true navigating put
+	0 direction put
+	say "-- GOING LEFT --" cr 			]	is go_left
+
+[	true navigating put
+	1 direction put
+	say "-- GOING RIGHT --" cr  			]	is go_right
+
+[  	2 random direction share =
+	direction release				]	is is_correct
+	
+[	correctnum take 1+ correctnum put		]	is inc_correct
+
+[	say "CTF{<censored>}" cr			]	is print_flag
+
+
+0 correctnum put
+true failstate put
+
+
+say "  _           _                _       _   _     " cr
+say " | |         | |              (_)     | | | |    " cr
+say " | |     __ _| |__  _   _ _ __ _ _ __ | |_| |__  " cr
+say " | |    / _` | '_ \| | | | '__| | '_ \| __| '_ \ " cr
+say " | |___| (_| | |_) | |_| | |  | | | | | |_| | | |" cr
+say " \_____/\__,_|_.__/ \__, |_|  |_|_| |_|\__|_| |_|" cr
+say "                     __/ |                       " cr
+say "                    |___/                        " cr cr
+
+say "Welcome to the Underwater Labyrinth" cr
+say "Help our precious ducky escape the labyrinth :)" cr cr
+say "Valid commands are: newgame, left, right" cr
+
+randomise
+announce_newgame
+
+cr $ '' $ '> '
+[
+	false validinput put
+	false navigating put
+	
+	input
+	
+	[ dup $ 'newgame' = iff [
+		say "-- STARTING GAME --" cr
+		say "You are the start of the underwater labyrinth..." cr
+		true validinput put
+		
+		0 correctnum put
+		false failstate put
+	] ]
+	
+	[ failstate share false = iff [
+	
+		[ dup $ 'left' = iff [
+			true validinput put
+			go_left
+		] ]
+		
+		
+		[ dup $ 'right' = iff [
+			true validinput put
+			go_right
+		] ]
+		
+		[ navigating share true = iff [
+			is_correct true = iff [ 
+				say "Looks like the right direction! You slowly progress through the labyrinth..." cr
+				inc_correct
+				
+				correctnum share 30 > iff [
+					say "Wow, you really know how to navigate these labyrinths!"  sp
+					print_flag
+				]
+			] 
+			else [ 
+				say "Oh no... You took a wrong turn and got lost in the depths of the ocean :(" cr cr
+				say "-- GAME OVER --" cr
+				true failstate put
+				announce_newgame
+			]
+		] ]
+		
+	] ]
+	
+	[ validinput share true != iff [
+		say "Invalid command in this context." cr	
+	] ]
+	
+	cr $ '> ' again 
+]
+
+

@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Feedbackdeletras"
+
+# Categoría del reto
+category: "Misceláneo"
+
+# Descripción del reto
+description: | 
+    El jugador tiene que adivinar palabras de cinco letras a lo largo de varias rondas, donde cada ronda proporciona un conjunto de retroalimentación sobre las letras correctas y su posición en la palabra oculta. El objetivo es adivinar correctamente la palabra secreta en cada ronda.
+    
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{Bingo_here_is_your_price}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - image/lingo.py
+    - image/wordlist.txt

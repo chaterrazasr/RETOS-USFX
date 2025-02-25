@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Labyrinth"
+
+# Categoría del reto
+category: "Misceláneo"
+
+# Descripción del reto
+description: | 
+    Podras decifrar el reto intentalo
+    
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{<censored>}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - files/labyrinth.qky
+    - files/quackery.py

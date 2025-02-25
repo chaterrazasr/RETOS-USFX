@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "Media-db"
+
+# Categoría del reto
+category: "Misceláneo"
+
+# Descripción del reto
+description: | 
+    El software de control de acceso te dio acceso a una base de datos personalizada para organizar una lista de reproducción de música. Parece que también podría estar conectado al refrigerador inteligente para reproducir alarmas de puerta personalizadas. Tal vez podamos obtener un token de OAuth que nos acerque al pastel.
+
+# Valor de puntos del reto
+value: 350
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{crypto_secret_flag}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - media-db.py
