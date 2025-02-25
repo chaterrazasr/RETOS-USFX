@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Vaultbreaker"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: | 
+    Estudie el archivo VaultBreaker incluido. La vulnerabilidad en este rompecabezas es una vulnerabilidad de cadena de formato. ¿Puedes encontrar la clave oculta?
+    Bandera = JCR(la CLAVE)
+    
+# Valor de puntos del reto
+value: 300
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(THUG)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - VaultBreaker

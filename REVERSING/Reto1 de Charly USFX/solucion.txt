@@ -1,0 +1,2 @@
+observar con ghidra la funcion main
+donde se encuentran al principio un array de 4 posiciones 

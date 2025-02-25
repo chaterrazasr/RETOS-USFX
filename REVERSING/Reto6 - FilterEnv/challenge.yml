@@ -1,0 +1,31 @@
+# Nombre del reto
+name: "FilterEnv"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: | 
+    Si utiliza su shell en Temp-o-matic, podrá ver el archivo de credenciales de Smartfridge2000. Sin embargo, no podrá leerlo, solo podrá hacerlo ese misterioso usuario root. Hay un extraño binario SUID en Tempo-a-matic que parece ser lo que necesita. Intente aprovecharlo para obtener privilegios de root.
+
+# Valor de puntos del reto
+value: 500
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{H3ll0-Kingc0p3}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - src/exploit.c
+    - src/filterenv.c
+    - src/filterenv

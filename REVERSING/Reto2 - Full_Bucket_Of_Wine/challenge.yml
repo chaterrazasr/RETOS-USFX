@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "Full_Bucket_Of_Wine"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: | 
+    Descargue el binario Full_Bucket_Of_Wine incluido en un entorno Linux. Abra una terminal y vaya a la carpeta donde guardó el binario. Active el archivo ejecutando el comando " ./Full_Bucket_Of_Wine " y siga las instrucciones. Si el archivo no funciona de inmediato, es posible que aún tengas que otorgarle derechos de ejecución con el comando " chmod +x Full_Bucket_Of_Wine ".
+    ¿Puedes descifrar la bandera?
+    Formato de bandera = JCR (un número)
+    
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(25296)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - Full_Bucket_Of_Wine
+

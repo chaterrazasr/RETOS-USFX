@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "Joint_stocks"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: | 
+    Estudie el archivo Joint_stocks incluido. ¿Puedes averiguar la dirección/ubicación de la función secreta?
+    Herramientas: Ghidra y Objdump
+    Bandera = JCR(0000....)
+    
+# Valor de puntos del reto
+value: 200
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(000011cd)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - Joint_stocks
+

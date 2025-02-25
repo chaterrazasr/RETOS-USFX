@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "i-wanna-do-nothing-today"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: |
+  Sabía que solo quieres pasar tu tiempo relajándote en lugar de pasar tiempo CTF. Visitemos la página, tomemos una taza de café y esperemos la bandera.
+
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - CTF{crypto_secret_flag}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - index.html

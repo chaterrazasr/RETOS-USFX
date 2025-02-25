@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "Sips_Of_Wine"
+
+# Categoría del reto
+category: "Reversing"
+
+# Descripción del reto
+description: | 
+    Abra el archivo 64_sips_of_wine suministrado en un entorno Linux e intente adivinar la contraseña.
+    Esta contraseña es también la bandera de este rompecabezas.
+    Herramientas: Ghidra y Cyberchef
+    Bandera = JCR(contraseña de 13 símbolos)
+    
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(3.14159265359)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - 64_sips_of_wine
