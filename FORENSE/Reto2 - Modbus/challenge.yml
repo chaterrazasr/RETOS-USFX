@@ -1,0 +1,31 @@
+# Nombre del reto
+name: "Modbus"
+
+# Categoría del reto
+category: "Forense"
+
+# Descripción del reto
+description: | 
+    El protocolo Modbus se utiliza en muchas fábricas para controlar procesos químicos mediante PLC (controladores lógicos programables). Sin embargo, Modbus no es una forma segura de comunicarse. Los desafíos en la seguridad de los entornos OT (tecnología operativa) e ICS (sistema de control industrial) se pueden simular de forma divertida y segura con: https://github.com/djformby/GRFICS
+    Analice el archivo modbus.pcapng suministrado. ¿Con qué cambio de valor de registro bloqueamos el proceso químico en nuestra simulación mediante el protocolo modbus? No pienses demasiado, hay un pensamiento lógico detrás de esto.
+    Bandera = JCR(valor de registro)
+    
+# Valor de puntos del reto
+value: 200
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(65535)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - modbus.pcapng
