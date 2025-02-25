@@ -1,0 +1,8 @@
+Título: Tri, Tres, Three: ¡Desenreda el Código!
+
+Este reto te recibe con un mensaje oculto en capas.
+
+29BA?<;BAA;D<4D=2E36:>GD3@79<@Z288>Z3F=C8E6CC885D
+
+
+FLAG: Flag: USFX{22e8218a5f7361df52906589a1397642}

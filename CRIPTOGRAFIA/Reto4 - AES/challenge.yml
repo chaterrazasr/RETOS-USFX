@@ -1,0 +1,35 @@
+# Nombre del reto
+name: "AES"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: |
+    AES, el estándar de cifrado avanzado, que ahora se utiliza en casi todas las aplicaciones.
+    Examine los mensajes cifrados en el archivo message.txt incluido.
+    El atacante Eve sospecha que estos mensajes entre Alice y Bob están cifrados con AES y apuesta a que se han tomado decisiones torpes en la implementación al utilizar un modo inseguro de AES y al uso de un algoritmo Hashing obsoleto, pero aún ampliamente utilizado.
+    Eve puede reemplazar 1 de los 4 mensajes con un nuevo mensaje cifrado.
+    Formato de bandera = JCR (el nuevo mensaje cifrado)
+    Este rompecabezas tiene mucho sentido si lo piensas un poco, ¡siendo la "bandera" la clave del éxito!
+    
+# Valor de puntos del reto
+value: 200
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(ba8b097933ee37ee9d32d36f26925a37)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - messages.txt
+

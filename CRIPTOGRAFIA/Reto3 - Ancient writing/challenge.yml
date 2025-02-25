@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Ancient Writing"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description:  |
+    Encontré este papiro romano antiguo. ¿Podrías descifrarlo para mí?
+    
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - dctf{th3_d13_h4s_b33n_c4st}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+#Llama a los archivos que queremos que se muestren
+files:
+    - AncientWriting.txt

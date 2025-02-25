@@ -1,0 +1,30 @@
+# Nombre del reto
+name: "Freedom"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: | 
+    Libertad: ¿dónde está nuestra libertad? 
+    Cada más mínimo error conduciría a un resultado desastroso. Veamos qué sucederá cuando encuentres la Flag
+
+# Valor de puntos del reto
+value: 150
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - hkcert21{w3_sh0u1d_n0t_g1v3_much_fr3ed0m_t0_us3r5_wh3n_1t_c0m3s_t0_cryp70gr4phy}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - chall.py

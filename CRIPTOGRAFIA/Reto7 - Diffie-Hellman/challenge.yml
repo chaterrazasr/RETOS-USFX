@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "Diffie-Hellman"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: | 
+    Debido a un error en la implementación de este código, al no utilizar un número primo, los valores posibles para SharedSecret serán unos pocos números diferentes, en lugar de más de 200 valores diferentes. Y, por tanto, mucho más fácil de descifrar.
+    ¿Qué valores puede asumir SharedSecret ajustando únicamente la variable bobSecret en este algoritmo? Establezca estos números en orden ascendente en el siguiente formato como bandera.
+    Formato de bandera = JCR(1,2,3,...,...,...)
+    
+# Valor de puntos del reto
+value: 300
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(1,64,148,169,190)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - diffie-hellman.py
+

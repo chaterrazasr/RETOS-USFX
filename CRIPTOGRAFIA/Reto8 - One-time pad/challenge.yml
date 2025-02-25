@@ -1,0 +1,32 @@
+# Nombre del reto
+name: "One-time pad"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: | 
+    Descomprima el archivo xor.zip incluido y estudie el código crypto_easy.py y el archivo output.txt.
+    ¡Bloc de notas de un solo uso, la forma más segura de cifrar información! Si las llaves solo se usaran una vez cada una...
+    ¿Podrás recuperar las claves... Redactados... y descubrir el patrón con el que se cifran los mensajes?
+    Formato de bandera = JCR(... bandera...)
+    
+# Valor de puntos del reto
+value: 350
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - JCR(register)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - xor.zip

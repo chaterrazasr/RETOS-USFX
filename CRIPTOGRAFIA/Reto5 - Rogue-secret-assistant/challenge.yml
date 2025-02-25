@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "Rogue-secret-assistant"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: | 
+    Mystiz no parece renunciar a usar RSA para almacenar sus secretos. Esta vez incluso se le permite enviar un exponente público arbitrario, e. ¿Puedes desvelar la bandera secreta?
+    
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - hkcert22{r5a_i5_ju5t_a_6unch_0f_m4th5}
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - chall.py

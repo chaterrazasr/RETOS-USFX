@@ -1,0 +1,29 @@
+# Nombre del reto
+name: "CyberChef"
+
+# Categoría del reto
+category: "Criptografía"
+
+# Descripción del reto
+description: | 
+    ¿Cuántas rotaciones del pimentero le volví a dar a mi ensalada César? ¿Cómo se cifra el siguiente mensaje?
+    
+# Valor de puntos del reto
+value: 250
+
+# Tipo del reto (puede ser otro si no necesitas contenedores)
+type: standard
+
+# Flags especifica las respuestas que usará el reto
+flags:
+    # Un flag estático sensible a mayúsculas
+    - Flag(2f6973c13d1308136489b8e4697794584b8d3941)
+
+# Estado del reto (puede ser "hidden" si deseas ocultarlo)
+state: visible
+
+# Versión de la especificación del reto
+version: "0.1"
+
+files:
+    - CyberChef.txt
